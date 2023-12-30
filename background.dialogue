@@ -1,0 +1,62 @@
+~ background
+Aurelius: I am Aurelius, Aurelius Vossara.
+Aurelius: I am a Bounty Hunter. And I've never failed a single task.
+Aurelius: (By the way, Din Djarin is my hero, just kidding...)
+Aurelius: Recently I got a new person on my list, a witch, in a village.
+Aurelius: You are to control me in this mission.
+Aurelius: Before it starts...
+Aurelius: Press T to talk to npcs
+Aurelius: Press Space to attack
+Aurelius: And press arrows to move me around.
+Aurelius: Good luck!
+=> END
+
+~ villager_1
+if !global.talked_to_villager_1:
+	Villager: [[Hello...|Hi...|Howdy...]]
+	- Hello
+		Aurelius: Hello 
+	- Why you look so worried?
+		Aurelius: Why you look so worried?
+	Villager: Help me...
+	Aurelius: ...
+	Villager: I am worried that I will be tortured.
+	Aurelius: Why?
+	Villager: We used to live in peace and happiness...
+	Villager: Until one day, there came an evil soceress...
+	Villager: She enslaved and tortured many of us...
+	Villager: Now everybody in this village lived in fear...
+	- What can I do to help?
+		Aurelius: What can I do to help?
+	- Why does your misfortune concerns me? [Sniffs]
+		Aurelius: Why does your misfortune concern me?[Sniffs]
+	Villager: Ah,[casts a mysterious gaze]
+	Villager: The Prophecy foretells the advent of a Chosen One, donned in golden armor...
+	Villager: Help us, for you ARE the Chosen One...
+
+	Aurelius: Why do you think I'm the Chosen One?
+	Villager: Signs and symbols, my friend. Your armor, your arrival, coincides with the prophesied time.
+	Villager: The villagers have waited for someone like you, someone with the aura of the Chosen One.
+	
+	Aurelius: [in mind] Emmm... Now that's interesting...
+	Aurelius: I don't really believe in the Chosen One stuff but it's pretty similar to the information I got.
+	Aurelius: That witch is indeed here.
+	Aurelius: I'll hunt her down and get my bounty.
+	=> END
+
+else:
+	Villager: Help us! The fate of our village lies in your hands, Chosen One.
+	Villager: May the ancient prophecy guide and protect you on this perilous journey.
+	=> END
+=> END
+
+~ blueGhostIntro
+if !global.blueIntro:
+	Aurelius: A Blue Ghost!
+	Blue Ghost: [Hsssssss...]
+=> END
+
+~ redGhostIntro
+if !global.redIntro:
+	Aurelius: Those Red ones are nasty! You don't want to let them discover you!
+=> END

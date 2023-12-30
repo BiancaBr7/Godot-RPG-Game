@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dye04jdxxjwvw"
+path="res://.godot/imported/background.dialogue-b0e66d426f108328297994d35557c715.tres"
+
+[deps]
+
+source_file="res://background.dialogue"
+dest_files=["res://.godot/imported/background.dialogue-b0e66d426f108328297994d35557c715.tres"]
+
+[params]
+
+defaults=true
